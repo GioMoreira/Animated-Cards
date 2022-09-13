@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*, *:after, *:before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebbfce;
+}
+
+h2 {
+    margin: 14px 0;
+    padding-top: 20px;
+    color: #464547;
+}
+
+.container{
+    width: min-content;
+    height: min-content;
+    margin: 50px auto;
+
+    display: flex;
+}
+
+.card-container {
+    margin: 0 30px;
+    position: relative;
+    height: 390px;
+    width: 250px;
+}
+
+.card {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 8px;
+    box-shadow: 0 20px 30px #5e1e5f7a;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: translateY(15px);
+    transition: all 1.3s;
+
+    z-index: 100;
+}
+
+.card-img {
+    width: 120px;
+    height: 90px;
+    transform: translateY(5px);
+    transition: all 1s;
+    position: relative;
+    border-radius: 5px;
+    object-fit: cover;
+    /* object-position:  20% 20%; */
+}
+
+.line-pink {
+    width: 140px;
+    height: 110px;
+    border: 1px solid #e2a4b9;
+    position: absolute;
+    transform: translateY(5px);
+    transition: all 1s;
+    transform: rotate(-5deg);
+    top: 16px;
+    border-radius: 5px;
+    box-shadow: 0 5px 2px #8f6d8f38;
+}
+
+
+
+.card-description {
+    width: 100%;
+    text-align: center;
+
+}
+
+.card .card-description p{
+    color: grey;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    transition: all 1.3s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 40px 50px #5e1e5f7a;
+}
+
+.card-img:hover {
+    transform: translateY(-5px);
+    transform: rotate(-5deg);
+    transition: all 1s;
+}
+
+.card-behind {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    bottom: -10px;
+    border-radius: 0 0 8px 8px;
+    z-index: 99;
+    margin: 0 15px;
+    backdrop-filter: blur(15px);
+    background: rgba(160, 59, 151, 0.39);
+    box-shadow: 0 5px 20px #ce7895af;
+} 
+
+
+/* .card-behind {
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    bottom: -5px;
+    border-radius:  0 0 8px 8px;
+    z-index: 98;
+    margin: 0 25px;
+    backdrop-filter: blur(15px);
+    background: rgba(208, 76, 196, 0.41);
+    box-shadow: 0 5px 20px rgba(208, 76, 196, 0.41);
+} */
